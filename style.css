@@ -1,48 +1,55 @@
-/* Add style for logo */
-.logo {
-    float: left;
-    /* Place logo at the far left */
-    width: 100px;
-    /* Set the width of the logo */
-    height: 100px;
-    /* Set the height of the logo */
+*{
+    margin: 0;
+    padding: 0;
 }
-
-/* Add style for search bar and search icon */
-.search-bar {
-    float: right;
-    /* Place search bar at the far right */
-    margin-top: 20px;
-    /* Set the distance from the top of the page */
-    margin-right: 20px;
-    /* Set the distance from the right margin */
-    border: 1px solid black;
-    /* Add black border for search bar */
+body{
+    background-color: bisque;
 
 }
-
-.search-input {
-    width: 300px;
-    /* Set the width of the input box */
-    height: 30px;
-    /* Set the height of the input box */
-    border: none;
-    /* Remove border of the input box */
-    padding-left: 10px;
-    /* Set the distance from the left margin of the input box */
-    outline: none;
-    /* Remove border of the input box when clicked */
+#navbar{
+    background-color: aquamarine;
+}
+.nav-element{
+    list-style: none;
+    margin: 0.5rem;
+    margin-left: 6rem;
+}
+.first-child{
+    margin-right: 30rem;
+}
+#nav-elements{
+    display: flex;
+    align-items: center;
+     
+}
+.search{
+    padding: 1.1rem;
+    border-radius: 25px;
+}
+.search-btn{
+    background-color: rgb(93, 93, 175);
+}
+.search-btn:hover{
+    color: rgb(219, 201, 235);
+    background-color:  rgb(152, 152, 214);
 }
 
-.search-button {
-    width: 30px;
-    /* Set the width of the search button */
-    height: 30px;
-    /* Set the height of the search button */
-    border: none;
-    /* Remove border of the search button */
-    background-image: url("search-icon.png");
-    /* Set image for search button */
-    background-size: cover;
-    /* Adjust image size to fit search button */
+.container{
+    display: flex;
+    gap: 2px;
+    margin: 0.2rem;
+    justify-content: space-evenly;
+     
 }
+.box{
+    width: 200px;
+    height: 300px;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+footer{
+    background-color: grey;
+    font-size: larger;
+    padding: 1.5rem;
+}
+ 
