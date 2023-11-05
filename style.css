@@ -93,6 +93,11 @@ body{
 .search-btn{
     background-color: rgb(93, 93, 175);
 }
+.search-btn:hover{
+    color: rgb(219, 201, 235);
+    background-color:  rgb(152, 152, 214);
+}
+
 .container{
     display: flex;
     gap: 2px;
