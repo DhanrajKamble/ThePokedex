@@ -8,7 +8,7 @@
     overflow-x: hidden;
 }
 body{
-    background-color:#131526;
+    background-color:#F0F0E5;
 
 }
 ul li {
@@ -16,7 +16,7 @@ ul li {
     margin-top: 10px;
 }
 #navbar{
-    background-color:#253358;
+    background-color:#09C077;
     width:100%;
     margin:0 auto;
     padding: 10px 0;
@@ -34,7 +34,7 @@ ul li {
     list-style: none;
     width: 83%;
     height: 3rem;
-    background-color: #3C5289;
+    background-color: #1D855C;
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,23 +46,23 @@ ul li {
     background-color: none;
 }
 ::marker{
-    color: #253358;
+    color:#09C077;
 }
 .bar{
     width: 7%;
     height: 3rem;
-    background-color: #3C5289;
+    background-color: #A4F1D1;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     box-sizing: border-box;
     outline: none;
 }
 .bar p{
-    color: #ffff;
     font-size: 18px;
+    margin-top: 15px;
 }
 .bar img{
     width: 18px;
