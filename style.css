@@ -54,14 +54,15 @@ ul li {
     background-color: #A4F1D1;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     box-sizing: border-box;
     outline: none;
 }
 .bar p{
     font-size: 18px;
+    margin-top: 15px;
 }
 .bar img{
     width: 18px;
