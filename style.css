@@ -11,6 +11,10 @@ body{
     background-color:#131526;
 
 }
+ul li {
+    list-style: none;
+    margin-top: 10px;
+}
 #navbar{
     background-color:#253358;
     width:100%;
@@ -114,7 +118,9 @@ body{
 footer{
     background-color: grey;
     font-size: larger;
-    padding: 1.5rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
 }
 
  
