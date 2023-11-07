@@ -20,6 +20,7 @@ ul li {
     width:100%;
     margin:0 auto;
     padding: 4px 10px 14px 10px;
+    box-sizing: border-box;
 }
 #nav-elements{
     max-width:81rem;
