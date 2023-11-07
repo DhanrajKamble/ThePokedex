@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 #wrapper{
     height:100vh;
-    overflow-y:auto;
+    width: 100vw;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 body{
@@ -19,17 +21,15 @@ ul li {
     background-color:#09C077;
     width:100%;
     margin:0 auto;
-    padding: 10px;
- 
+    padding: 4px 10px 14px 10px;
 }
 #nav-elements{
-    max-width:82rem;
+    max-width:81rem;
     margin:0 auto;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 .nav-element{
     list-style: none;
     width: 83%;
@@ -49,7 +49,7 @@ ul li {
     color:#09C077;
 }
 .bar{
-    width: 6rem;
+    width: 6.5rem;
     height: 2.7rem;
     background-color: #A4F1D1;
     border-radius: 15px;
@@ -63,7 +63,6 @@ ul li {
 }
 .bar p{
     font-size: 18px;
-    margin-top: 15px;
 }
 .bar img{
     width: 18px;
@@ -81,9 +80,9 @@ ul li {
     transition: outline 0.1s linear;
 }
 .search:hover{
-    border: 2px solid #1E7CC4;
-    outline: 1px solid #1C5082;
-    outline-width: 5px;
+    border: 0.5px solid #1E7CC4;
+    outline: 0.5px solid #1C5082;
+    outline-width: 0.5px;
 }
 
 .search::placeholder{
@@ -95,35 +94,41 @@ ul li {
     position: absolute;
     right: 10px;
 }
-
-
-.search-btn{
-    background-color: rgb(93, 93, 175);
-}
-.search-btn:hover{
-    color: rgb(219, 201, 235);
-    background-color:  rgb(152, 152, 214);
-}
-
 .container{
+    max-width:81rem;
+    margin:0 auto;
     display: flex;
-    gap: 2px;
-    margin: 0.2rem;
-    justify-content: space-evenly;
-     
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 .box{
-    width: 200px;
-    height: 300px;
-    background-color: cadetblue;
-    border-radius: 5px;
+    width: 49.5%;
+    height: 882px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+.box .title{
+    height: 5rem;
+    background-color: #28906A;
+    padding-left: 1rem;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    
 }
 footer{
     background-color: grey;
     font-size: larger;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    padding: 2rem;
+    text-align: center;
 }
 @media(max-width:960px) {
     .bar{
@@ -134,6 +139,13 @@ footer{
     }
     .bar p{
         display: none;
+    }
+    .container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
     }
 }
 
