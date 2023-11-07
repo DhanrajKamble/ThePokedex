@@ -71,7 +71,7 @@ ul li {
     height: 3rem;
     border-radius: 13px;
     background-color: transparent;
-    padding: 10px;
+    padding-left: 15px;
     color: white;
     outline: none;
     border: transparent;
@@ -101,6 +101,7 @@ ul li {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+    padding: 0 .6rem;
 }
 .box{
     width: 49.5%;
@@ -144,6 +145,7 @@ footer{
     .container{
         flex-wrap: nowrap;
         flex-direction: column;
+        padding: 0px;
     }
     .box{
         width: 100%;
