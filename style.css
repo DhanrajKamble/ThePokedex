@@ -19,15 +19,15 @@ ul li {
     background-color:#09C077;
     width:100%;
     margin:0 auto;
-    padding: 10px 0;
+    padding: 10px;
  
 }
 #nav-elements{
-    width:82rem;
+    max-width:82rem;
     margin:0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .nav-element{
@@ -49,14 +49,15 @@ ul li {
     color:#09C077;
 }
 .bar{
-    width: 7%;
-    height: 3rem;
+    width: 6rem;
+    height: 2.7rem;
     background-color: #A4F1D1;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 0.5rem;
     box-sizing: border-box;
     outline: none;
 }
@@ -72,6 +73,8 @@ ul li {
     height: 3rem;
     border-radius: 13px;
     background-color: transparent;
+    padding: 10px;
+    color: white;
     outline: none;
     border: transparent;
     font-size: 20px; 
@@ -121,6 +124,17 @@ footer{
     padding: 1rem;
     position: fixed;
     bottom: 0;
+}
+@media(max-width:960px) {
+    .bar{
+        width: 3rem;
+    }
+    #nav-elements :nth-child(2){
+        order: 2;
+    }
+    .bar p{
+        display: none;
+    }
 }
 
  
