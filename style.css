@@ -255,6 +255,9 @@ footer{
 }
 /*== XX === Footer Section code ends== XX ====*/
 @media(max-width:960px) {
+    html{
+        font-size: 50%;
+    }
     .bar{
         width: 4.8rem;
     }
