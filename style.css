@@ -1,140 +1,263 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
 }
 #wrapper{
     height:100vh;
     width: 100vw;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
 }
 body{
     background-color:#F0F0E5;
 }
+/*======= nav bar code start========*/
 ul li {
     list-style: none;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 #navbar{
     background-color:#09C077;
     width:100%;
     margin:0 auto;
-    padding: 4px 10px 14px 10px;
+    padding: 0.4rem 1rem 1.4rem 1rem;
     box-sizing: border-box;
 }
 #nav-elements{
-    max-width:81rem;
+    max-width:129.6rem;
     margin:0 auto;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
+    box-sizing: border-box;
 }
 .nav-element{
     list-style: none;
     width: 83%;
-    height: 3rem;
+    height: 4.8rem;
     background-color: #1D855C;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
     align-items: center; 
-    border-radius: 13px;
+    border-radius: 1.3rem;
+    box-sizing: border-box;
+}
+.nav-element:hover{
+    border: 0.1rem solid #1E7CC4;
 }
 .logo{
-    width: 5.4rem;
+    width: 8.64rem;
     background-color: none;
+    cursor: pointer;
 }
 ::marker{
     color:#09C077;
 }
 .bar{
-    width: 6.5rem;
-    height: 2.7rem;
+    width: 10.4rem;
+    height: 4.32rem;
     background-color: #A4F1D1;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 0.5rem;
+    gap: 1.0rem;
+    padding: 0.8rem;
     box-sizing: border-box;
     outline: none;
+    cursor: pointer;
 }
 .bar p{
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .bar img{
-    width: 18px;
+    width: 1.8rem;
+}
+.bar img:nth-child(2){
+    display: none;
+}
+.active img:nth-child(2){
+    display: block;
+}
+.active img:nth-child(1){
+    display: none;
 }
 .search{
     width: 100%;
-    height: 3rem;
-    border-radius: 13px;
+    height: 4.8rem;
     background-color: transparent;
-    padding-left: 15px;
     color: white;
+    padding-left: 1rem;
     outline: none;
     border: transparent;
-    font-size: 20px; 
+    font-size: 2rem; 
     transition: outline 0.1s linear;
+    box-sizing: border-box;
 }
-.search:hover{
-    border: 0.5px solid #1E7CC4;
-    outline: 0.5px solid #1C5082;
-    outline-width: 0.5px;
-}
-
 .search::placeholder{
     color:#B0B9CF;
-    padding-left: 10px;
+    padding-left: 0;
 }
 .search-icon{
-    width: 20px;
-    position: absolute;
-    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    border-radius: 1.1rem;
+    cursor: pointer;
 }
+.search-icon .search-svg{
+    width: 2rem;
+}
+.search-icon:hover{
+    background-color: #00B7FF;
+}
+.search-icon .cross-svg{
+    display: none;
+}
+.active .search-svg{
+    display: none;
+}
+.active .cross-svg{
+    display: block;
+}
+.active.search{
+    border:0.2rem solid black;
+    outline:0.2rem solid white;
+    background: #1D855C;
+    border-radius: 0.2rem ;
+}
+/*=== XX === nav bar code ends ==== XX ===*/
+
+/*======= Hero Section code start========*/
 .container{
-    max-width:81rem;
+    max-width:129.6rem;
     margin:0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
-    padding: 0 .6rem;
+    margin-top: 2rem;
+    padding: 0 0.96rem;
 }
 .box{
     width: 49.5%;
-    height: 882px;
+    height: 88.2rem;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 1rem;
+    border-radius: 1.6rem;
     margin-bottom: 1%;
     overflow: hidden;
 }
 .box .title{
-    height: 5rem;
     background-color: #28906A;
-    padding: 1rem 0px;
     color: white;
-    font-size: 2.4rem;
+    font-size: 3.84rem;
     font-weight: bold;
     display: flex;
     align-items: center;
 }
 .box .title p{
-    padding: 1rem;
+    padding: 1.6rem;
 }
+/*== XX === Hero Section code ends === XX ====*/
+/*======= Menu Bar code start========*/
+.menu-wrapper{
+    width: 100vw;
+    background-color:#EAF4EB;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute; 
+    top: 7.7rem;
 
+    transform: translateY(100%);
+    transition: all 0.4s linear;
+    opacity: 0; 
+    visibility: hidden;
+    pointer-events: none;
+}
+.active .menu-wrapper{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.menu-container{
+    max-width:129.6rem;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.nav-menu-box{
+    width: 49.5%;
+    height: fit-content;
+    background-color: transparent;
+    overflow: hidden;
+}
+.menu-box{
+    padding: 1.6rem;
+}
+.menu-title{
+    margin-bottom: 2rem;
+}
+.menu-title hr{
+    margin-top: 0.6rem;
+}
+.category-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
+.category{
+    width: 49%;
+    border: 1px solid #DDDDDD;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+}
+.category-name{
+    display: flex;
+    gap: 2rem;
+    padding: 4%;
+}
+.category-name a{
+    text-decoration: none;
+    color: black;
+}
+.category-name a:nth-child(2){
+    color: rgb(63, 62, 62);
+    font-size: 0.9rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.category-name img{
+    background-color: black;
+}
+/*=== XX === Menu Bar code ends ==== XX ===*/
+
+/*======= Footer Sectin code start========*/
 footer{
+    width: 100vw;
     background-color: grey;
     font-size: larger;
-    padding: 2rem;
+    padding: 3.2rem;
     text-align: center;
 }
+/*== XX === Footer Section code ends== XX ====*/
 @media(max-width:960px) {
     .bar{
-        width: 3rem;
+        width: 4.8rem;
     }
     #nav-elements :nth-child(2){
         order: 2;
@@ -152,10 +275,18 @@ footer{
         border-radius: 0px;
     }
     .box .title p{
-        padding: 1rem;
+        padding: 1.6rem;
     }
     .container{
         margin-top: 0px;
+    }
+    .menu-container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        
+    }
+    .nav-menu-box{
+        width: 100%;
     }
 }
 
