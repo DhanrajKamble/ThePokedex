@@ -256,7 +256,7 @@ footer{
 /*== XX === Footer Section code ends== XX ====*/
 @media(max-width:960px) {
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
     .bar{
         width: 4.8rem;
@@ -290,6 +290,16 @@ footer{
     .nav-menu-box{
         width: 100%;
     }
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:360px){
+    html{
+        font-size: 30%;
+    }
+}
 }
 
  
