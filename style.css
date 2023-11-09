@@ -290,16 +290,9 @@ footer{
     .nav-menu-box{
         width: 100%;
     }
-@media(max-width:768px){
-    html{
-        font-size: 45%;
+    .category-name img{
+        width: 4rem;
     }
-}
-@media(max-width:360px){
-    html{
-        font-size: 30%;
-    }
-}
 }
 
  
