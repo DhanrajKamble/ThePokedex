@@ -225,6 +225,7 @@ ul li {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 1rem;
     margin-bottom: 1%;
+    background-color: #FFFFFF;
 }
 .category-name{
     display: flex;
