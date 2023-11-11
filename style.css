@@ -14,7 +14,7 @@ html {
   position: relative;
 }
 body {
-  background-color: #f0f0e5;
+  background-color: #F0F0E5;
 }
 /*======= nav bar code start========*/
 ul li {
@@ -250,7 +250,7 @@ ul li {
 
 /*======= Footer Section code start========*/
 .footer-container {
-  background-color: #f0f0e5;
+  background-color: #F0F0E5;
   margin-top: 10vh;
   /* I would recommend using this font for the whole site */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
