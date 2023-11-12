@@ -314,5 +314,9 @@ footer {
   .nav-menu-box{
       width: 100%;
   }
+
+  .category-name{
+    padding: 6%;
+  }
   
 }
