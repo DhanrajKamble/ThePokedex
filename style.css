@@ -315,8 +315,16 @@ footer {
       width: 100%;
   }
 
-  .category-name{
-    padding: 6%;
-  }
   
+}
+@media(max-width:360px){
+  .category{
+    height: 10%;
+  }
+  .category-name a:nth-child(1){
+    font-size: 0.9rem;
+  }
+  .category-name a:nth-child(2){
+    font-size: 0.7rem;
+  }
 }
